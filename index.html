@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script src="https://kit.fontawesome.com/3a97c04aaf.js" crossorigin="anonymous"></script>
+
+  <title>Piedra, Papel y Tijeras</title>
+</head>
+
+<body>
+  <!-- CONTENEDOR -->
+  <div class="container" id="menuPartida" hidden>
+    <div class="row m-0 vh-100 justify-content-center align-items-center">
+
+      <!-- MÚSICA -->
+      <div class="row">
+          <div class="col-1">
+            <i id="iconoMusica" class="fa-solid fa-headphones"></i><input type="button" id="btnMusicaPartida" class="mr-3" value="Música"/>
+          </div>
+      </div>
+
+      <div class="col-6 borde-negro h-75 fondo-blanco">
+
+        <!-- INTERIOR ORDENADOR-->
+        <div class="row">
+          <div class="col text-center">
+            <h4 id="puntosOrdenador" class="display-5 mt-2"><i class="fa-solid fa-desktop"></i> Ordenador&nbsp;&nbsp;&nbsp;Puntos: 0</h4>
+          </div>
+        </div>
+        <div id="bordeOrdenador" class="row h-25 w-50 container-jugadores mt-3 text-center">
+          <div class="col">
+            <img class="imagen-jugador mt-3" src="assets/img/piedra.png" alt="" id="imgOrdenador">
+          </div>
+        </div>
+
+        <!-- MEDIO -->
+        <div class="row">
+          <div class="col mt-3 borde-centro text-center">
+            <h2 id="ganador"><i class="fa-regular fa-star mt-2"></i> Gana Papel (Ordenador)</h2>
+          </div>
+        </div>
+
+        <!-- INTERIOR JUGADOR -->
+        <div id="bordeJugador" class="row h-25 w-50 container-jugadores mt-4 text-center">
+          <div class="col">
+            <img id="imgJugador" class="imagen-jugador mt-2" src="assets/img/tijeras.png" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <h4 id="puntosJugador" class="display-5 mt-2"><i class="fa-regular fa-user"></i> Jugador&nbsp;&nbsp;&nbsp;&nbsp;Puntos: 0</h4>
+          </div>
+        </div>
+
+        <!-- BOTONES -->
+        <div class="row">
+          <div class="col-4">
+            <button id="btnPapel" class="btn"><img class="w-50 img-fluid" src="assets/img/papel.png" alt=""></button>
+          </div>
+          <div class="col-4">
+            <button id="btnPiedra" class="btn"><img class="w-50 img-fluid" src="assets/img/piedra.png" alt=""></button>
+          </div>
+          <div class="col-4">
+            <button id="btnTijeras" class="btn"><img class="w-50 img-fluid" src="assets/img/tijeras.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+
+      <!--INICIALIZAR-->
+      <div class="row">
+        <div class="col-1">
+          <i id="iconoReiniciar" class="fa-solid fa-repeat"></i></i><input type="button" id="btnInicializar" class="ml-3" value="Iniciar"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENEDOR -->
+  <div class="container" id="menuInicio">
+    <div class="row m-0 vh-100 justify-content-center align-items-center">
+      <div class="row">
+        <div class="col-1">
+          <i id="iconoMusica" class="fa-solid fa-headphones"></i><input type="button" id="btnMusicaInicio" class="mr-3" value="Música"/>
+        </div>
+      </div>
+      <div class="col-6 borde-negro h-75 fondo-blanco" id="colMenuPartida">
+        <div class="row justify-content-center align-items-center m-0 h-75">
+          <div class="col text-center">
+            <h2 class="display-5 text-warning">¡Piedra, Papel y Tijeras!</h2>
+            <img class="w-50 mt-5" src="assets/img/logo.png" alt="">
+            <br>
+            <input id="btnComenzar" type="button" class="btn btn-success" value="¡Empezar a jugar!">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AUDIO -->
+  <audio id="audio" controls autoplay loop hidden>
+    <source src="assets/audio/Powerful-Trap-.mp3" type="audio/mpeg">
+  </audio>
+
+  <script type="module" src="js/controllers/Main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

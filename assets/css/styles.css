@@ -1,0 +1,81 @@
+body {
+  background-color: rgb(167, 254, 254);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.fondo-blanco {
+  background-color: white;
+}
+
+.borde-negro {
+  border: 3px solid black;
+}
+
+.titulo {
+  margin-left: 85px;
+}
+
+.container-jugadores {
+  margin-left: 135px;
+  border-width: 7px;
+  border-style: dashed;
+  border-color: #000000;
+  border-radius: 7px 7px 7px 7px;
+  height: 175px;
+}
+
+.borde-centro {
+  background-color: rgb(227, 227, 227);
+  letter-spacing: normal;
+  font-weight: bold;
+  outline: 4px solid black;
+}
+
+.imagen-jugador {
+  width: 110px;
+}
+
+button {
+  width: 140px;
+  height: 80px;
+  background-color: rgb(227, 227, 227) !important;
+  border: 2px solid black !important;
+  box-shadow: 2px 2px 2px black;
+}
+
+button:hover {
+  background-color: rgb(248, 248, 248) !important;
+}
+
+#imgOrdenador {
+  transform: rotate(180deg);
+}
+
+#btnInicializar,
+#btnMusicaPartida,
+#btnMusicaInicio {
+  width: 150px;
+  height: 50px;
+  margin-top: 520px;
+  color: white;
+  background-color: rgb(244, 41, 41);
+  border: 3px solid black;
+  box-shadow: 2px 2px 3px black;
+}
+
+#btnInicializar:hover {
+  background-color: rgb(248, 85, 85) !important;
+}
+
+#iconoReiniciar,
+#iconoMusica {
+  margin-top: 540px;
+  margin-left: 30px;
+  position: absolute;
+  color: white;
+}
+
+#colMenuPartida {
+  background-color: rgb(84, 114, 141);
+}
